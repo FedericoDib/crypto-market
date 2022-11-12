@@ -27,12 +27,12 @@ const handleSearch = e => {
 
   return (
     <>
-        <div className="home__container">
+        <section className="home__container">
             <span className="home__title">Crypto markets</span>
             <input type="text" placeholder='Search a Coin...' className='form-control bg-dark text-light border-0 mb-4 text-center' onChange={handleSearch} />
             { coins.length ? (<TableCoins coins={coins} search={search} />) : (<Loader />)}
             <Footer />
-        </div>
+        </section>
     </>
   )
 }

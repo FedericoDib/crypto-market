@@ -7,7 +7,7 @@ function TableCoins({coins, search}) {
     const filteredCoins = coins.filter(coin => coin.name.toLowerCase().includes(search.toLowerCase()) | coin.symbol.toLowerCase().includes(search.toLowerCase())) 
 
   return (
-    <>  <div className="table-responsive-md">
+    <>  <div className="table-responsive">
             <table className="table table-dark table-hover table-bordered align-middle">
                 <thead>
                     <tr className="table__heads">
